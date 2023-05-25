@@ -33,7 +33,7 @@ app.get("/about", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    message: "What a noob",
+    message: "Add some help guides here",
     title: "Help",
     name: "Akshaj Rao",
   });

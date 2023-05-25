@@ -30,9 +30,6 @@
 # Web P
 *.webp
 
-# Portable Network Graphics
-*.png
-
 # Animated Portable Network Graphics
 *.apng
 
@@ -56,7 +53,6 @@
 # BMP
 *.bmp
 *.dib
-
 
 # 3D Images
 *.3dm
@@ -200,7 +196,7 @@ dist
 
 # Swap
 [._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
+!*.svg # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
@@ -217,4 +213,3 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
-
