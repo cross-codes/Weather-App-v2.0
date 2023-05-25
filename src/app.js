@@ -20,14 +20,14 @@ hbs.registerPartials(partialPath);
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Akshaj Rao",
+    name: "Cross",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Akshaj Rao",
+    name: "Cross",
   });
 });
 
@@ -35,7 +35,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     message: "Add some help guides here",
     title: "Help",
-    name: "Akshaj Rao",
+    name: "Cross",
   });
 });
 
@@ -43,7 +43,7 @@ app.get("/help/*", (req, res) => {
   res.render("404", {
     error: "The requested help page was not found",
     header: "Error 404",
-    name: "Akshaj Rao",
+    name: "Cross",
   });
 });
 
@@ -92,7 +92,7 @@ app.get("*", (req, res) => {
   res.render("404", {
     header: "Error 404",
     error: "The requested page was not found",
-    name: "Akshaj Rao",
+    name: "Cross",
   });
 });
 
