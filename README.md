@@ -35,4 +35,5 @@ on port 3000 to access the website
 
 ---
 Project Started on: 06/05/2023
+
 (v2.0) First functional version completed on: 23/05/2023
