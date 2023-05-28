@@ -39,14 +39,6 @@ app.get("/help", (req, res) => {
   });
 });
 
-app.get("/help/*", (req, res) => {
-  res.render("404", {
-    error: "The requested help page was not found",
-    header: "Error 404",
-    name: "Cross",
-  });
-});
-
 app.get("/weather", (req, res) => {
   if (!req.query.address) {
     return res.send({
@@ -74,18 +66,6 @@ app.get("/weather", (req, res) => {
       });
     });
   }
-});
-
-app.get("/products", (req, res) => {
-  if (!req.query.search) {
-    return res.send({
-      error: "You must provide a search term",
-    });
-  }
-  console.log(req.query);
-  res.send({
-    products: [],
-  });
 });
 
 app.get("*", (req, res) => {
