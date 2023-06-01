@@ -7,7 +7,6 @@ const geocode = require("./utils/geocode");
 // NOTE: The website is on http://localhost:3000/
 
 const app = express();
-
 const viewPath = path.join(__dirname, "../templates/views");
 const publicPath = path.join(__dirname, "../public");
 const partialPath = path.join(__dirname, "../templates/partials");
