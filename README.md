@@ -24,7 +24,18 @@ This command will install the necessary modules required to use the website.
 The website has not been hosted on any platform as of 27/05/2023, so the website
 can only be viewed locally.
 
-To run the website, run the following command in the CWD:
+Additionally, you will need to make an `.env` file inside
+`📁 src/` with the following contents:
+
+```javascript
+const API_KEY = "<insert your OpenWeatherMap API Key here>";
+
+module.exports = {
+  apikey: API_KEY  
+}
+```
+
+After that, run the following command in the CWD:
 
 ```bash
 npm run devel
