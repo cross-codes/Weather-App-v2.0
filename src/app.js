@@ -44,16 +44,16 @@ app.get("/weather", (req, res) => {
       error: "You must provide a valid address",
     });
   } else {
-    geocode.geocode(req.query.address, (error_g, { location, latitude, longitude } = {}) => {
-      if (error_g) {
+    geocode.geocode(req.query.address, (geocodeError, { location, latitude, longitude } = {}) => {
+      if (geocodeError) {
         return res.send({
-          error: error_g,
+          error: geocodeError,
         });
       }
-      forecast.forecast(latitude, longitude, (error_w, { description, temperature, humidity } = {}) => {
-        if (error_w) {
+      forecast.forecast(latitude, longitude, (weatherError, { description, temperature, humidity } = {}) => {
+        if (weatherError) {
           return res.send({
-            error: error_w,
+            error: weatherError,
           });
         }
         return res.send({
