@@ -41,7 +41,7 @@ After that, run the following command in the CWD:
 npm run devel
 ```
 
-And the launch the [local host](http://localhost:3000/)
+And then launch the [local host](http://localhost:3000/)
 on port 3000 to access the website
 
 ---
